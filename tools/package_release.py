@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 """Package validated CRT/D81 plus exact corresponding sources and notices."""
-import hashlib, json, struct, subprocess, zipfile
+import hashlib, io, json, struct, subprocess, zipfile
 from pathlib import Path
 from fetch_release_sources import DEST, fetch
 from d81 import extract_pc
@@ -21,6 +21,9 @@ def package():
     commit=git('rev-parse','HEAD')
     files=git('ls-files','-z').split('\0')
     files=[name for name in files if name]
+    # Archive committed blobs, not worktree line-ending conversions.
+    with zipfile.ZipFile(io.BytesIO(subprocess.check_output(['git','archive','--format=zip','HEAD'],cwd=ROOT))) as archive:
+        committed={name:archive.read(name) for name in files}
     if not {'README.md','THIRD_PARTY_NOTICES.md','docs/screenshots/bios-post.png','docs/screenshots/freedos.png'}<=set(files):
         raise ValueError('Tracked publication files are missing')
     production=json.loads((BUILD/'release-verification-report.json').read_text())
@@ -92,12 +95,12 @@ Source commit: {commit}
         z.writestr('SHA256SUMS-media.txt',''.join(value+'  '+name+'\n' for name,value in hashes.items()))
         for name in files:
             if name in ('LICENSE','THIRD_PARTY_NOTICES.md','docs/release.md','docs/release-inputs.json') or name.startswith(('LICENSES/','docs/evidence/','docs/screenshots/')):
-                z.write(ROOT/name,name)
+                z.writestr(name,committed[name])
     with zipfile.ZipFile(source,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for name in files:
             if name.startswith(('build/','.git/','tools/cc65/','tools/vice/','tools/zig/','tools/upx/','tools/jwasm/')):
                 raise ValueError('Unexpected generated/tool binary in Git: '+name)
-            z.write(ROOT/name,'project/'+name)
+            z.writestr('project/'+name,committed[name])
         for name in sources: z.write(DEST/name,'upstream/'+name)
         for name in ('GLABIOS.ASM','configuration.json'):
             z.write(BUILD/'glabios'/name,'generated-glabios/'+name)
