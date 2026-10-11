@@ -1,0 +1,6 @@
+* text=auto
+*.png -text
+*.ROM -text
+*.COM -text
+LICENSES/** -text
+vendor/** -text

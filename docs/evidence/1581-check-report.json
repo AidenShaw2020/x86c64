@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "configuration": "PAL C64, true 1581 drive CPU, IEC U1/U2",
+  "prg_sha256": "7a84bd9b342659a201e11a9144764525ca4aa8f39e47d74f5bba17686fbe4100",
+  "guest_error": 0,
+  "drive_error": 0,
+  "persistent_image_sha256": "320ecada10c7697a7ce66f5f3191599727004bc5f44e78aa9aa5e10fe8e307f2",
+  "elapsed_seconds": 4.3
+}

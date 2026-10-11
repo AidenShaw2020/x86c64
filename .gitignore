@@ -1,0 +1,10 @@
+/build/
+/tools/cc65/
+/tools/vice/
+/tools/zig/
+/tools/jwasm/
+/tools/upx/
+/tools/*.zip
+/tools/python/
+*.o
+__pycache__/

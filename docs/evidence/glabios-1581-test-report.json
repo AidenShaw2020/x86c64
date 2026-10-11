@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "configuration": "PAL C64, 1MiB REU, Magic Desk emulator/BIOS, true 1581 IEC",
+  "native_pass": true,
+  "disk_image": "build\\1581\\FD64-TEST.D81",
+  "cartridge": "build\\1581\\FD64-TEST.CRT",
+  "unpacked_kernel": true,
+  "started": 1791719493.1421351,
+  "artifacts": {
+    "build\\1581\\FD64-TEST.D81": "b147b8123b23508b153b31f504ce24cb02aeb23bb62d92bb7bdff07ab1656f7f",
+    "build\\1581\\FD64-TEST.CRT": "e3becd629b7c6e6716c5cc28ad1cfc961bb69cc32abb966e2cf186677682c157",
+    "build\\vice-glabios-1581.prg": "61f551e60cbc7c0eda99ebc72680b8bb9d4a5370ca7ab242643c0fcc4799a01d",
+    "build\\vice-glabios-1581.lbl": "e052ea9bc44356c45709bd8c910a930802deaeab7b74076abdd654e11333b0d7"
+  },
+  "instructions": 2180551,
+  "pc": "104C:CF6A",
+  "post_complete": true,
+  "reads": 387,
+  "writes": 5,
+  "drive_error": 0,
+  "c64_cycles_since_reset": 11003114303,
+  "snapshot": "build\\glabios-1581-ready.vsf",
+  "guest_pass_marker": true,
+  "persistent_file": "WRITE81.TXT",
+  "persistent_content": "FD64 1581 WRITE OK\r\n",
+  "final_disk_sha256": "8fcd693af100bb9fac1153fc5cd3dc91c8e5b71a933d663150277217eefedc7e",
+  "elapsed_seconds": 766.0
+}

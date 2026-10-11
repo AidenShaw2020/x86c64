@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "configuration": "PAL C64, 1MiB REU, production Magic Desk CRT, true 1581, VICE warp",
+  "artifacts": {
+    "FD64.CRT": "2b5ec9e7344249d7f4ea0f285af9ac2f1d3923ad58d9d20f392c82905ed6bf81",
+    "FD64.D81": "fba5f7bfb766c9390308182f556924d8b1a67d8624c57e3be39664aaaeca0970"
+  },
+  "post_complete": true,
+  "post_seconds": 50.2,
+  "dos_ready": true,
+  "ready_marker_seconds": 612.9,
+  "verification_reconnected": true,
+  "response": "x86c64 poc ok",
+  "response_row": 23,
+  "reconnected_verification_seconds": 284.3,
+  "boot_method": "cold reset from production CRT; no snapshot restore",
+  "commands": [
+    "VER",
+    "DIR /B",
+    "ECHO X86C64 POC OK"
+  ],
+  "input_note": "Keyboard input was paced to avoid BIOS buffer overflow. The verifier reconnected to the same cold-boot machine; lower-case response was checked in actual VIC-II pixels."
+}

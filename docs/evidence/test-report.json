@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "configuration": "PAL C64, 1MiB REU, x86 runs on 6510",
+  "cases": [
+    {
+      "name": "python-images",
+      "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.174s\n\nOK"
+    },
+    {
+      "name": "native",
+      "output": "GLABIOS_PROBE: CPU register/flags tests executed, STOP I/O E6 at F000:E083\nFD64_NATIVE_PASS: 311751 assertions"
+    },
+    {
+      "name": "vice-reu",
+      "exit": 0,
+      "pass_marker": true,
+      "expected_pass": true,
+      "c64_cycles": 8432590
+    },
+    {
+      "name": "vice-no-reu",
+      "exit": 1,
+      "pass_marker": false,
+      "expected_pass": false,
+      "c64_cycles": 3241773
+    },
+    {
+      "name": "vice-cycle-limit",
+      "exit": 1,
+      "pass_marker": false,
+      "expected_pass": false,
+      "c64_cycles": null
+    },
+    {
+      "name": "vice-missing-disk",
+      "exit": 5,
+      "pass_marker": false,
+      "expected_pass": false,
+      "c64_cycles": 7019783
+    },
+    {
+      "name": "vice-bad-signature",
+      "exit": 6,
+      "pass_marker": false,
+      "expected_pass": false,
+      "c64_cycles": 7067044
+    }
+  ]
+}

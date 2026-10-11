@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "name": "kernel-2043-source.zip",
+      "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/kernel/2043/ke2043s.zip",
+      "sha256": "f6eea42ed25b2a5b7941846bbb5d99a823b434c3df7701beb336883e76e4af6e"
+    },
+    {
+      "name": "freecom-086-package.zip",
+      "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/repositories/1.4/base/freecom.zip",
+      "sha256": "3a7cfa03cce242031926cd67b69e1fd030d1c27127885d927629945f3137b6f0"
+    },
+    {
+      "name": "cc65-b3bf30f-source.zip",
+      "url": "https://codeload.github.com/cc65/cc65/zip/b3bf30f",
+      "sha256": "4e95322353035bafd71ec04532ed9364c1f1aeee8dd9ec92e30d45b9954cbb2e"
+    }
+  ],
+  "derived_freecom_source": {
+    "member": "SOURCE/FREECOM/SOURCES.ZIP",
+    "name": "freecom-086-fd14-source.zip",
+    "sha256": "a38aef9c9de694c99fca4449bc05ca14da2206ebed31c68d64e58a024802feb7"
+  },
+  "freecom_binary": {
+    "member": "BIN/COMMAND.COM",
+    "sha256": "077808379e896476f7f69d62e6c8989d8fc23e8ef58d1c8492db1ac106784107"
+  },
+  "freedos_floppy_edition": {
+    "url": "https://download.freedos.org/1.4/FD14-FloppyEdition.zip",
+    "sha256": "45b1fa7c52dd996c3bfa5e352ffcd410781b952a6ad629f15a4c9ec4bbaefc5a"
+  },
+  "glabios": {
+    "revision": "b98b0fe396466fa41466a9521f40987c989ae077",
+    "tag": "v0.4.2",
+    "reference_rom_sha256": "c2bc9ec1893c0ea4098433c862b97e546c4877c6a21c5bc23792ea2b6639c7d4",
+    "configured_rom_sha256": "2eb0b19b5092f89da40c3a733057dee77730a96cb36463485f921f945331f719"
+  }
+}

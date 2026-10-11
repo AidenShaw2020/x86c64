@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "command": "TYPE WRITE81.TXT",
+  "reads_before": 388,
+  "reads_after": 391,
+  "response_row": 23,
+  "elapsed_seconds": 38.3
+}

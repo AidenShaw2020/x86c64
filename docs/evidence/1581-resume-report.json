@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "test": "New DOS response after glabios-1581 snapshot restore",
+  "snapshot_sha256": "720f886fc55681e14f9df1797a0a7c32606e8a07ef3a1956ee84d4436bc34b37",
+  "response": "FD64 1581 OK",
+  "response_row": 23,
+  "screenshot": "build\\glabios-1581-resumed.png",
+  "elapsed_seconds": 24.2
+}

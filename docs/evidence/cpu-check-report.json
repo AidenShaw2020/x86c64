@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "vectors": 3072,
+  "batches": [
+    {
+      "vectors": 512,
+      "prg_sha256": "c4874d84ec4de837bb13f87a4c3db8573935a9d71f2dd188bdb17ace273d46c3"
+    },
+    {
+      "vectors": 512,
+      "prg_sha256": "906b2b3d7bf403f4f2a54e38ce1414b12e5f4cd652ec34b3c552e407a675c144"
+    },
+    {
+      "vectors": 512,
+      "prg_sha256": "1e896b10aaa168cdefc0d32e4822e0cbf12ca78e4dbff1744a70b197dddf8684"
+    },
+    {
+      "vectors": 512,
+      "prg_sha256": "d07cc8503c1851424c8cbfe839ab89423e32c9356e7cd43d6b66adc0854fdd6f"
+    },
+    {
+      "vectors": 512,
+      "prg_sha256": "716d8cfb1d5a67bc7755f93448257d5e9e0686a6f4045b06253242b1d80b01e4"
+    },
+    {
+      "vectors": 512,
+      "prg_sha256": "192d8fb549e39c1a1125d813eabcca135f29968cf935dcd0674074e2b3280cc2"
+    }
+  ]
+}
